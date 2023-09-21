@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap");
+
+:root {
+  --dark: #512051;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  width: 375px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.container {
+  margin-top: 82px;
+}
+
+.textSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.mainTitle {
+  font-size: 40px;
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 17px;
+  font-weight: 600;
+}
+
+.mainPar {
+  font-size: 19px;
+  color: #927b91;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 39px;
+}
+
+.rating {
+  margin-bottom: 49px;
+}
+
+.wrap {
+  width: 327px;
+  height: 78px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 8px;
+  background: #f7f2f7;
+  margin-bottom: 17px;
+}
+
+.stars {
+  margin: 16px 0 15.23px 0;
+}
+
+.rate {
+  font-size: 17px;
+  color: var(--dark);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.reviwe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 99px;
+}
+
+.comment {
+  width: 327px;
+  height: 248px;
+  flex-shrink: 0;
+  background-color: var(--dark);
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 40px 32px;
+}
+
+.info {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-left: 23px;
+}
+
+.name h3:first-of-type {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.name h3:last-of-type {
+  color: #ee69a4;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.comment p {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.desktop-bottom {
+  display: none;
+}
+
+.desktop-top {
+  display: none;
+}
+
+.mobile-top {
+  position: absolute;
+  top: 0;
+}
+
+.mobile-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    width: 900px;
+    position: relative;
+    padding: 118px 165px;
+  }
+  .media-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+  }
+  .container {
+    margin-top: 82px;
+    width: 445px;
+  }
+
+  .textSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mainTitle {
+    font-size: 56px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .mainPar {
+    font-size: 19px;
+    color: #927b91;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 39px;
+    letter-spacing: -0.633px;
+  }
+
+  .rating {
+    position: absolute;
+    right: 290px;
+    top: 80px;
+  }
+
+  .wrap {
+    width: 445px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrap:first-of-type {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+  }
+  .wrap:nth-of-type(2) {
+    position: absolute;
+    left: 340px;
+    top: 70px;
+  }
+  .wrap:nth-of-type(3) {
+    position: absolute;
+    left: 380px;
+    top: 140px;
+  }
+
+  .stars {
+    position: absolute;
+    margin: 0;
+    left: 20px;
+  }
+
+  .rate {
+    position: absolute;
+    top: 20px;
+    font-size: 17px;
+    left: 160px;
+  }
+
+  .review {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+
+  .comment {
+    width: 350px;
+    height: 234px;
+  }
+
+  .comment:first-of-type {
+    position: absolute;
+    left: 0px;
+  }
+  .comment:nth-of-type(2) {
+    position: absolute;
+    left: 380px;
+    top: 20px;
+  }
+  .comment:nth-of-type(3) {
+    position: absolute;
+    left: 760px;
+    top: 40px;
+  }
+}
